@@ -13,7 +13,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         SponsorsManagement sponsors = new SponsorsManagement();
         System.out.println("------------------------------------------");
-        System.out.println("This is the Sponsors MENU.");
+        System.out.println("--MENU--");
         System.out.println("Type the number you want to continue with");
         System.out.println("1. Add a new sponsor.");
         System.out.println("2. Update a sponsor.");
@@ -83,7 +83,7 @@ public class Main {
             }
             
             System.out.println("------------------------------------------");
-            System.out.println("This is the Sponsors MENU.");
+            System.out.println("--MENU--");
             System.out.println("Type the number you want to continue with");
             System.out.println("1. Add a new sponsor.");
             System.out.println("2. Update a sponsor.");

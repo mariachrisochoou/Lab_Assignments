@@ -22,6 +22,7 @@ public class SponsorsManagement {
     public void showSponsors() {
         for (Sponsor sponsor: sponsorList) {
             System.out.println(sponsor.toString());
+            System.out.println("-------------------------------");
         }
     }
 
