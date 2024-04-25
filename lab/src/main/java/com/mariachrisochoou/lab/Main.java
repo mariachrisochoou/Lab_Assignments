@@ -50,7 +50,7 @@ public class Main {
 
                 sponsors.addSponsor(ID, name, industry, number, email, address);
             } else if (answer == 2) {
-                System.out.println("Type the ID of the company you want to update:");
+                System.out.println("Type the ID of the company you want to update: ");
                 int ID = input.nextInt();
                 input.nextLine(); 
 
