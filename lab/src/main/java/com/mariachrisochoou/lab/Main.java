@@ -39,8 +39,8 @@ public class Main {
                 String industry = input.nextLine();
 
                 System.out.print("Company Phone number: ");
-                int number = input.nextInt();
-                input.nextLine();    
+                String number = input.nextLine();
+ 
             
                 System.out.print("Company Email: ");
                 String email = input.nextLine();
@@ -54,14 +54,20 @@ public class Main {
                 int ID = input.nextInt();
                 input.nextLine(); 
 
+                System.out.print("Company Industry: ");
+                String industry = input.nextLine(); 
+
                 System.out.print("Company Phone number: ");
-                int number = input.nextInt();
-                input.nextLine();    
+                String number = input.nextLine(); 
             
                 System.out.print("Company Email: ");
                 String email = input.nextLine();
 
-                sponsors.updateSponsor(ID, number, email);
+                System.out.print("Company Address: ");
+                String address = input.nextLine(); 
+
+                sponsors.updateSponsor(ID, industry, number, email, address);
+                System.out.println("Sponsor updated successfully!");
             } else if (answer == 3) {
                 // sponsors.deleteSponsor(1);
             } else if (answer == 4) {

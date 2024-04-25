@@ -15,7 +15,7 @@ public class SponsorsManagement {
         sponsorList = new ArrayList<>();
     }
 
-    public void addSponsor(int ID, String name, String industry, int number, String email, String address) {
+    public void addSponsor(int ID, String name, String industry, String number, String email, String address) {
         sponsorList.add(new Sponsor(ID, name, industry, number, email, address));
     }
 
@@ -37,11 +37,13 @@ public class SponsorsManagement {
         // sponsorList.remove(sponsorList.indexOf(object));
     }
 
-    public void updateSponsor(int ID, int number, String email) {
+    public void updateSponsor(int ID, String industry, String number, String email, String address) {
         for (Sponsor sponsor: sponsorList) {
             if (sponsor.getID() == ID) {
+                sponsor.setIndustry(industry);
                 sponsor.setNumber(number);
                 sponsor.setEmail(email);
+                sponsor.setAddress(address);
             }
         }
         

@@ -11,11 +11,11 @@ public class Sponsor {
     private int companyID;
     private String companyName;
     private String businessIndustry;
-    private int companyNumber;
+    private String companyNumber;
     private String companyEmail;
     private String companyAddress;
 
-    public Sponsor (int ID, String name, String industry, int number, String email, String address) {
+    public Sponsor (int ID, String name, String industry, String number, String email, String address) {
         companyID = ID;
         companyName = name;
         businessIndustry = industry;
@@ -48,11 +48,11 @@ public class Sponsor {
         return businessIndustry;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         companyNumber = number;
     }
 
-    public int getNumber() {
+    public String getNumber() {
         return companyNumber;
     }
 
