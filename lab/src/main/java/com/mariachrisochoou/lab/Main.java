@@ -50,7 +50,7 @@ public class Main {
 
                 sponsors.addSponsor(ID, name, industry, number, email, address);
             } else if (answer == 2) {
-                System.out.println("Type the ID of the company you want to update: ");
+                System.out.println("Type the ID of the company you want to update:");
                 int ID = input.nextInt();
                 input.nextLine(); 
 
@@ -83,7 +83,7 @@ public class Main {
             }
             
             System.out.println("------------------------------------------");
-            System.out.println("--MENU--");
+            System.out.println("MENU");
             System.out.println("Type the number you want to continue with");
             System.out.println("1. Add a new sponsor.");
             System.out.println("2. Update a sponsor.");
