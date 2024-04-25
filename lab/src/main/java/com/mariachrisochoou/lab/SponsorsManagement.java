@@ -27,14 +27,12 @@ public class SponsorsManagement {
 
     public void deleteSponsor(int ID) {
 
-        Sponsor object = null;
         for (Sponsor sponsor: sponsorList) {
-            if (sponsor.getID() == ID) {
-                object = sponsor;
+            if (ID == sponsor.getID()) {
                 sponsorList.remove(sponsor);
+                return;
             }
         }
-        // sponsorList.remove(sponsorList.indexOf(object));
     }
 
     public void updateSponsor(int ID, String industry, String number, String email, String address) {

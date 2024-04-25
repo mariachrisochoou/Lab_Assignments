@@ -69,7 +69,15 @@ public class Main {
                 sponsors.updateSponsor(ID, industry, number, email, address);
                 System.out.println("Sponsor updated successfully!");
             } else if (answer == 3) {
-                // sponsors.deleteSponsor(1);
+                System.out.println("Type the ID of the company you want to delete:");
+                int ID = input.nextInt();
+                input.nextLine(); 
+                sponsors.showSponsors();
+                
+                sponsors.deleteSponsor(ID);
+                sponsors.showSponsors();
+
+                
             } else if (answer == 4) {
                 sponsors.showSponsors();
             }
