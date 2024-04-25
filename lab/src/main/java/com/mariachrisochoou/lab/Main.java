@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 /** This is the main class.
- *
+ *  Shows the user a MENU where they can choose what actions they want to perform.
  * 
  * @author mariachrisochoou
  */
@@ -72,10 +72,7 @@ public class Main {
                 System.out.println("Type the ID of the company you want to delete:");
                 int ID = input.nextInt();
                 input.nextLine(); 
-                sponsors.showSponsors();
-                
                 sponsors.deleteSponsor(ID);
-                sponsors.showSponsors();
 
                 
             } else if (answer == 4) {

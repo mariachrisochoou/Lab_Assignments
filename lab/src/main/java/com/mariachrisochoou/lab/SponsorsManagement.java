@@ -10,9 +10,22 @@ public class SponsorsManagement {
 
     private ArrayList<Sponsor> sponsorList;
 
-    // Constructor: Management of the List of Sponsors
     public SponsorsManagement() {
         sponsorList = new ArrayList<>();
+        addListSponsors();
+    }
+
+
+    public void addListSponsors() {
+        Sponsor sp1 = new Sponsor(10001,"AB Vasilopoulos", "Supermarket", "2101231234", "ab@gmail.com", "Marousi");
+        Sponsor sp2 = new Sponsor(10002,"Nike", "Footwear", "2101231245", "nike@gmail.com", "Athens");
+        Sponsor sp3 = new Sponsor(10003,"Agrino", "Food", "2101231256", "agrino@gmail.com", "Patras");
+        Sponsor sp4 = new Sponsor(10004,"Aueb", "Education", "2102231256", "aueb@gmail.com", "Athens");
+        sponsorList.add(sp1);
+        sponsorList.add(sp2);
+        sponsorList.add(sp3);
+        sponsorList.add(sp4);
+
     }
 
     public void addSponsor(int ID, String name, String industry, String number, String email, String address) {
