@@ -1,3 +1,4 @@
+package com.mariachrisochoou.lab;
 import java.util.Scanner;
 import java.util.ArrayList;
 

@@ -1,3 +1,4 @@
+package com.mariachrisochoou.lab;
 /** This is a class about a company that the user may consider
  * as a sponsor for a project or event.
  * 

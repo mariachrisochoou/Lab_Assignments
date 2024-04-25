@@ -1,3 +1,4 @@
+package com.mariachrisochoou.lab;
 import java.util.ArrayList;
 
 /** This is a class representing the management of the sponsors

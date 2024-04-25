@@ -12,6 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <maven.compiler.source>1.8</maven.compiler.source>
+      <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -24,15 +26,34 @@
   </dependencies>
 
     <build>
+        <finalName>LabApp</finalName>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.2.0</version>
                 <configuration>
-                    <mainClass>Main</mainClass> <!-- Specify the main class for your application -->
+                   <archive>
+                      <manifest>
+                        <addClasspath>true</addClasspath>
+                        <mainClass>com.mariachrisochoou.lab.Main</mainClass>
+                      </manifest>
+                    </archive>
                 </configuration>
             </plugin>
+            <plugin>
+            <!-- Build an executable JAR -->
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.2.0</version>
+            <configuration>
+              <archive>
+                <manifest>
+                  <mainClass>com.mariachrisochoou.lab.Main</mainClass>
+                </manifest>
+              </archive>
+            </configuration>
+          </plugin>
         </plugins>
     </build>
 </project>
