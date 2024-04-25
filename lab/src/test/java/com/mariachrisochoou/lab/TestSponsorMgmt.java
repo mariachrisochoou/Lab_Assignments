@@ -77,22 +77,25 @@ public class TestSponsorMgmt {
         assertEquals("Show Sponsors Correctly", sponsor.toString(), toString);
     }
 
-    // @Test
-    // public void testDeleteSponsors() {
-    //     int id = 123;
-    //     String name = "Nike";
-    //     String industry = "Shoes";
-    //     String number = "210 123 4567";
-    //     String email = "info@nike.com";
-    //     String address = "Kifisias 168 Av.";
-    //     sponsor = new Sponsor(id, name, industry, number, email, address);
-    //     list.add(sponsor);
+    @Test
+    public void testDeleteSponsors() {
+        int id = 123;
+        String name = "Nike";
+        String industry = "Shoes";
+        String number = "210 123 4567";
+        String email = "info@nike.com";
+        String address = "Kifisias 168 Av.";
+        sponsor = new Sponsor(id, name, industry, number, email, address);
+        list.add(sponsor);
 
-    //     for (Sponsor sponsors: list) {
-    //         if (sponsors.getID() == sponsor.getID()) {
-    //             list.remove(sponsor);
-    //         }
-    //     }
+        for (Sponsor sponsors: list) {
+            if (sponsors.getID() == sponsor.getID()) {
+                list.remove(sponsor);
+                break;
+            }
+        }
 
-    // }
+        assertEquals("Size of a list after deletion", 0, list.size());
+
+    }
 }
