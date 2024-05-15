@@ -24,3 +24,7 @@ This is executed for the Second Lab Assignment of *Software Engineering in Pract
 3. Run the Docker Container: 
 
     `docker run -it labapp`
+
+## Public Key 
+ 
+ This is my public key fingerprint: 250588ADE615AF47315F55BBCB61C04298272166
