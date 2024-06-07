@@ -4,7 +4,7 @@
 
 The intense (for my computer) fuzzing made me realise a few things:
     
-1. Whenever **two sequential** digits are entered, the program (unfortunately?) crashes.
+1. Whenever **two sequential** digits are entered, the program crashes.
 2. When a **null character** is given at the beginning or in the end, the program crashes.
 
 ## Task 2:
